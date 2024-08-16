@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>insert</title>
+    <script>
+
+        const twoSum = function (nums, target) {
+
+            let output1 = 0, output2 = 0
+
+            for (let i = 0; i <= nums.length; i++) {
+                for (let j = i + 1; j <= nums.length; j++) {
+                    ((nums[i] + nums[j]) === target) && (output1 = i, output2 = j)
+                }
+            }
+            return [output1, output2]
+
+        };
+        // twoSum([2, 7, 11, 15], 9)
+        console.log(twoSum([2, 11, 7, 15], 9))
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

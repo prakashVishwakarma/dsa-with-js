@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>insert</title>
+    <script>
+        // right side se 1 -1 kar ke age khiskao
+        // jab i == ho jaegi position ke ( jaha pe insert karna hai )
+        // tab jisko insert karna hai usko assaing kar do  waha pe 
+
+        let array_insert = [32, 4, 35, 6, 3, 43]
+        let newElement = 5555
+        let position = 3
+
+        for (let i = array_insert.length - 1; i >= 0; i--) {
+            if (position <= i) {
+                array_insert[i+1] = array_insert[i]
+                if(position === i){
+                    array_insert[i] = newElement
+                }
+            }
+            // console.log(array_insert[i])
+        }
+        console.log(array_insert)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

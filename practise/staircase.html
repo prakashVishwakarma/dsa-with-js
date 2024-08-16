@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a program that prints a staircase of size .</title>
+    <script>
+        // let n = 5
+        // let printHash = ''
+        // debugger
+        // for (let i = 0; i < n; i++) {
+        //     for (let j = 0; j < n; j++) {
+        //         printHash += '#'
+        //     }
+        //     printHash += '\n'
+        // }
+        // console.log(printHash)
+
+        // -----------------------------------------------------------------
+
+
+        // let n = 5
+        // let printHash = ''
+        // debugger
+        // for (let i = 0; i <= n; i++) {
+        //     for (let j = 0; j < i; j++) {
+        //         printHash += '#'
+        //     }
+        //     printHash += '\n'
+        // }
+        // console.log(printHash)
+
+        // ----------------------------------------------------------------------
+
+
+        // let n = 5
+        // let printHash = ''
+        // // debugger
+        // for (let i = 0; i < n; i++) {
+        //     for (let j = n; j > i; j--) {
+        //         printHash += '#'
+        //     }
+        //     printHash += '\n'
+        // }
+        // console.log(printHash)
+
+        // ----------------------------------------------------------------------
+
+
+        // let n = 6;
+        // let string = "";
+        // // debugger
+        // for (let i = 1; i <= n; i++) {
+        //     let step = "";
+        //     for (let j = 1; j <= n; j++) {
+        //         if (j <= n - i) {
+        //             step += " ";
+        //         } else {
+        //             step += "#";
+        //         }
+        //     }
+        //     console.log(step);
+        // }
+
+        // ----------------------------------------------------------------------
+        let n = 5
+        // want to declare a variable that will hold the final output that we will print 
+        let output = ''
+
+        // outer for loop to keep track of the overall number of rows (n)
+        for (let i = 1; i <= n; i++) {
+            for (let s = n - 1; s >= i; s--) {
+                output += ' '
+            }
+            for (let h = 1; h <= i; h++) {
+                output += '#'
+            }
+            output += "\n"
+
+        }
+        console.log(output)
+
+        // let n = 5; // row or column count
+        // // defining an empty string
+        // let string = "";
+
+        // for (let i = 0; i < n; i++) { // external loop
+        //     for (let j = 0; j < n; j++) { // internal loop
+        //         string += "*";
+        //     }
+        //     // newline after each row
+        //     string += "\n";
+        // }
+        // // printing the string
+        // console.log(string);
+    </script>
+</head>
+
+<body>
+    <h1>Write a program that prints a staircase of size .</h1>
+
+</body>
+
+</html>

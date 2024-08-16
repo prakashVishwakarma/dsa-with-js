@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>array delete</title>
+    <script>
+        let data = [30, 20, 45, 76, 20, 80];
+        let position = 3;
+
+        for (let i = position; i <= data.length - 1; i++) {
+            data[i] = data[i + 1]
+            
+            if (i === data.length - 1) {
+                data.length = data.length - 1
+            }
+        }
+        console.log(data)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

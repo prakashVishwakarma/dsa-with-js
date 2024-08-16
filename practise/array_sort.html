@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>array_sort using bubble sort</title>
+    <script>
+        // let data = [40, 30, 12, 25];
+        let data = [34, 3, 1, 25, 54, 12, 89, 5, 76, 789];
+
+        for (let i = 0; i <= data.length; i++) {
+            for (let j = 0; j <= data.length; j++) {
+                if (data[j] > data[j + 1]) {
+                    let temp = data[j]
+                    data[j] = data[j + 1]
+                    data[j + 1] = temp
+                }
+            }
+
+        }
+        console.log(data)
+        
+// --------------------  string sorting  ------------------------------
+
+        let array = ["Pynepple", "Orenge", "Apple"];
+
+        for (let i = 0; i <= array.length - 2; i++) {
+            for (let j = i + 1; j <= array.length - 1; j++) {
+                if (array[i][0] > array[j][0]) {
+                    let temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+            }
+        }
+
+        console.log('array', array);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

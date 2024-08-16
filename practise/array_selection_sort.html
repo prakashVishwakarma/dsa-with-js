@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>array_selection_sort</title>
+    <script>
+        let data = [40, 30, 12, 25];
+        // let data = [34, 3, 1, 25, 54, 12, 89, 5, 76, 789];
+        let minId
+        for (let i = 0; i < data.length; i++) {
+            minId = i
+            for (let j = i + 1; j < data.length; j++) {
+                if (data[minId] > data[j]) {
+                    minId = j
+                }
+
+            }
+            let temp = data[minId]
+            data[minId] = data[i]
+            data[i] = temp
+        }
+        console.log(data)
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
